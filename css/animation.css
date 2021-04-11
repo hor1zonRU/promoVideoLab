@@ -1,0 +1,27 @@
+/* .right {
+    animation: right 1s linear;
+}
+
+@keyframes right {
+    from {
+        margin-left: 100%;
+      }
+    
+    to {
+        margin-left: 0%;
+    }
+}
+
+.left {
+    animation: left 1s linear;
+}
+
+@keyframes left {
+    from {
+        margin-right: 100%;
+      }
+    
+    to {
+        margin-right: 0%;
+    }
+} */

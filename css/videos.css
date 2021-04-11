@@ -1,0 +1,159 @@
+@import url('/css/animation.css');
+
+/* ------------------------------------------------- General Styles ------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h2-videos{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    }
+
+.a-videos {
+    position: absolute;
+    left: 200px;
+    bottom: 35px;
+}
+
+.p-videos {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+
+    color: #041032;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------------------- Video List Styles ------------------------------------------------ */
+
+.video-list {
+    margin-bottom: 40px;
+}
+
+.video-list-item {
+    display: flex;
+    justify-content: space-between;
+
+    min-height: 400px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    padding: 30px 30px 40px 30px;
+    margin-bottom: 20px;
+}
+
+.left-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 570px;
+    min-height: 330px;
+}
+
+.left-item-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.right-item {
+    max-width: 600px;
+    max-height: 345px;
+    position: relative;
+}
+
+@media (max-width: 1280px) {
+    .video-list-item {
+        align-items: flex-start;
+    }
+
+    .h2-videos {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: -0.02em;
+    }
+
+    .p-videos {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 150%;
+    }
+
+    .a-videos {
+        left: 125px;
+        bottom: -10px;
+    }
+
+    img {
+        max-width: 448px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .video-list-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-item {
+        justify-content: space-evenly;
+    }
+
+   .a-videos {
+        left: 0;
+   }
+
+   .h2-videos {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+    }
+
+   .p-videos {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 150%;
+   }
+}
+
+@media (max-width: 768px) {
+
+    .video-list-item {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .left-item-bottom {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .a-videos {
+        left: 0;
+        bottom: 10px;
+    }
+    .video-list-item {
+        padding: 10px 10px 20px 10px;
+    }
+}
